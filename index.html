@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image" href="kk.bg.jpg">
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+    <!-- Loader -->
+    <div id="loader" class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- content-section -->
+    <div style="display:none;" id="showcontent" class="animate-bottom">
+        <!-- Header -->
+        <header class="container">
+            <nav class="navbar">
+                <div class="logo">Kier</div>
+                <ul class="navMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburgerMenu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,<br> I'm Kier Patrick</h1>
+                <h2>Baskeball Player</h2>
+            </div>
+            <a class="btn" href="#contact">contact</a>
+        </header>
+        <nav class="mobile_navbar">
+            <ul class="mobile_navmenu" id="mobileNavMenu">
+                <a class="navLinks" href="#">Home</a>
+                <a class="navLinks" href="#about">About</a>
+                <a class="navLinks" href="#projects">Projects</a>
+                <a class="navLinks" href="#contact">Contact</a>
+            </ul>
+        </nav>
+        <!-- ----------ABOUT---------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="pp.bg.jpg" >
+                    </div>
+                    <div class="about-col-2">
+                        <div>
+                            <h1 class="sub-title">About</h1>
+                            <p> Hello, Im Kier Patrick Rago, my course is Bachelor of Science in Information Technology in DLL, I live in 
+                                Purok Mauwlawin Brgy. Isabang Lucena City my hobby is to play Basketball </p>
+                        </div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                            <p class="tab-links" onclick="openTab('Certifications')">Certifications</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>Techical Skills<br><span>Coding</span></li>
+                                <li>Soft Skills<br><span>Communication</span></li>
+                                <li>App Development<br><span>Building App Games</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Certifications">
+                            <ul>
+                                <li>Information in CyberSecurity<br><a href="Certi.jpg"
+                                        download>View</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>Bachelor of Science in Information Technology<br><span>DLL</span></li>
+                                <li>Information Communication Technology<br><span>CSTC</span></li>
+                                <li>QNHS<br><span>2015-2019</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Resume">
+                            <ul>
+                                <li><a href="pp.bg.jpg" download>Download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<script src="main.js"></script>
+</html>
